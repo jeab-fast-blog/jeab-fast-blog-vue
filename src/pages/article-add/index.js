@@ -1,2 +1,2 @@
-import ArticleList from './Index.vue'
-export default ArticleList
+import ArticleAdd from './Index.vue'
+export default ArticleAdd

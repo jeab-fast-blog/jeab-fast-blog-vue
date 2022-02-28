@@ -23,7 +23,7 @@ const options = {
       path: '/',
       name: '首页',
       component: TabsView,
-      redirect: '/login',
+      redirect: '/article_list',
       children: [
         {
           path: 'article_add',
