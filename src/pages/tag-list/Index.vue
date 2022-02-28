@@ -44,38 +44,23 @@ const columns = [
     dataIndex: 'id',
     key: 'id',
   },
-  {
-    title: '分类',
-    dataIndex: 'category',
-    key: 'category',
+   {
+    title: '名称',
+    dataIndex: 'name',
+    key: 'name',
   },
   {
-    title: '作者',
-    dataIndex: 'author',
-    key: 'author',
-  },
-  {
-    title: '标题',
-    key: 'title',
-    dataIndex: 'title',
+    title: '别名',
+    key: 'alias',
+    dataIndex: 'alias',
   },
    {
-    title: '日期',
-    key: 'createTm',
-    dataIndex: 'createTm',
-  },
-   {
-    title: '评论',
-    key: 'comment',
-    dataIndex: 'comment',
+    title: '文章数量',
+    key: 'articleNum',
+    dataIndex: 'articleNum',
   },
   {
-    title: '状态',
-    key: 'status',
-    dataIndex: 'status',
-  },
-  {
-    title: '',
+    title: '操作',
     key: 'action',
     scopedSlots: { customRender: 'action' },
   },
@@ -85,21 +70,15 @@ const columns = [
 const data = [
   {
     id: '1',
-    category: 'John Brown',
-    author: 32,
-    title: 'New York No. 1 Lake Park',
-    createTm: '1',
-    comment: 'John Brown',
-    status: 32,
+    name: 'John Brown',
+    alias: 32,
+    articleNum: 'New York No. 1 Lake Park',
   },
   {
     id: '1',
-    category: 'John Brown',
-    author: 32,
-    title: 'New York No. 1 Lake Park',
-    createTm: '1',
-    comment: 'John Brown',
-    status: 32,
+    name: 'John Brown',
+    alias: 32,
+    articleNum: 'New York No. 1 Lake Park',
   },
 ];
   export default {

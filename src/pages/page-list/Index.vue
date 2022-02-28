@@ -45,11 +45,6 @@ const columns = [
     key: 'id',
   },
   {
-    title: '分类',
-    dataIndex: 'category',
-    key: 'category',
-  },
-  {
     title: '作者',
     dataIndex: 'author',
     key: 'author',
@@ -75,7 +70,7 @@ const columns = [
     dataIndex: 'status',
   },
   {
-    title: '',
+    title: '操作',
     key: 'action',
     scopedSlots: { customRender: 'action' },
   },
@@ -85,7 +80,6 @@ const columns = [
 const data = [
   {
     id: '1',
-    category: 'John Brown',
     author: 32,
     title: 'New York No. 1 Lake Park',
     createTm: '1',
@@ -94,7 +88,6 @@ const data = [
   },
   {
     id: '1',
-    category: 'John Brown',
     author: 32,
     title: 'New York No. 1 Lake Park',
     createTm: '1',
