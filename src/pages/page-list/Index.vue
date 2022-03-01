@@ -1,26 +1,17 @@
 <template>
   <div class="new-page" :style="`min-height: ${pageMinHeight}px`">
-    <a-form layout="inline" :form="form">
-      <a-form-item label="分类">
-        <a-input />
-      </a-form-item>
-      <a-form-item label="类型">
-        <a-input />
-      </a-form-item>
-      <a-form-item>
-        <a-checkbox >
-          置顶
-        </a-checkbox>
-      </a-form-item>
-      <a-form-item >
-        <a-input />
-      </a-form-item>
-      <a-form-item >
-        <a-button type="primary">
-                提交
+    <a-row>
+      <a-col :span="24">
+        <a-button type="primary" style="margin:0 10px 10px 0">
+                导航管理
         </a-button>    
-      </a-form-item>
-    </a-form>
+        <a-button type="primary">
+          <a-icon type="diff" />
+                新建页面
+        </a-button>    
+      </a-col>
+    </a-row>  
+
     <a-table :columns="columns" :data-source="data">
       <span slot="action" >
         <a href="">

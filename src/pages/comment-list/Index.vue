@@ -1,18 +1,15 @@
 <template>
   <div class="new-page" :style="`min-height: ${pageMinHeight}px`">
+    <a-row>
+      <a-col :span="24">
+        <a-button type="primary" style="margin:0 10px 10px 0">
+          <a-icon type="audit" />
+                审批评论
+        </a-button>    
+      </a-col>
+    </a-row>  
     <a-form layout="inline" :form="form">
-      <a-form-item label="分类">
-        <a-input />
-      </a-form-item>
-      <a-form-item label="类型">
-        <a-input />
-      </a-form-item>
-      <a-form-item>
-        <a-checkbox >
-          置顶
-        </a-checkbox>
-      </a-form-item>
-      <a-form-item >
+      <a-form-item label="搜索">
         <a-input />
       </a-form-item>
       <a-form-item >
