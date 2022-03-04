@@ -33,95 +33,94 @@
               </a-form-model-item>
         </a-form-model>
       </a-col>
-      <a-col :span="4">
+      <a-col :span="3">
         <a-form-model
                     :model="form"
+                    >
+                <a-button type="primary">
+                  提交
+                </a-button>      
+                <a-form-model-item label="分类">
+                  <a-select
+                    label-in-value
+                    :default-value="{ key: 'lucy' }"
                   >
-              <a-button type="primary">
-                提交
-              </a-button>      
-              <a-form-model-item label="分类">
-                <a-select
-                  label-in-value
-                  :default-value="{ key: 'lucy' }"
-                >
-                  <a-select-option value="jack">
-                    Jack (100)
-                  </a-select-option>
-                  <a-select-option value="lucy">
-                    Lucy (101)
-                  </a-select-option>
-                </a-select>
-              </a-form-model-item>
-              <a-form-model-item label="状态">
-                <a-select
-                  label-in-value
-                  :default-value="{ key: 'lucy' }"
-                >
-                  <a-select-option value="jack">
-                    Jack (100)
-                  </a-select-option>
-                  <a-select-option value="lucy">
-                    Lucy (101)
-                  </a-select-option>
-                </a-select>
-              </a-form-model-item>
-              <a-form-model-item label="作者">
-                <a-select
-                  label-in-value
-                  :default-value="{ key: 'lucy' }"
-                >
-                  <a-select-option value="jack">
-                    Jack (100)
-                  </a-select-option>
-                  <a-select-option value="lucy">
-                    Lucy (101)
-                  </a-select-option>
-                </a-select>
-              </a-form-model-item>
-              <a-form-model-item label="日期">
-                <a-select
-                  label-in-value
-                  :default-value="{ key: 'lucy' }"
-                >
-                  <a-select-option value="jack">
-                    Jack (100)
-                  </a-select-option>
-                  <a-select-option value="lucy">
-                    Lucy (101)
-                  </a-select-option>
-                </a-select>
-              </a-form-model-item>
-              <a-form-model-item label="置顶">
-                <a-select
-                  label-in-value
-                  :default-value="{ key: 'lucy' }"
-                >
-                  <a-select-option value="jack">
-                    Jack (100)
-                  </a-select-option>
-                  <a-select-option value="lucy">
-                    Lucy (101)
-                  </a-select-option>
-                </a-select>
-              </a-form-model-item>
-               <a-form-model-item label="禁止评论">
-                 <a-select
-                  label-in-value
-                  :default-value="{ key: 'lucy' }"
-                >
-                  <a-select-option value="jack">
-                    Jack (100)
-                  </a-select-option>
-                  <a-select-option value="lucy">
-                    Lucy (101)
-                  </a-select-option>
-                </a-select>
-              </a-form-model-item>
+                    <a-select-option value="jack">
+                      Jack (100)
+                    </a-select-option>
+                    <a-select-option value="lucy">
+                      Lucy (101)
+                    </a-select-option>
+                  </a-select>
+                </a-form-model-item>
+                <a-form-model-item label="状态">
+                  <a-select
+                    label-in-value
+                    :default-value="{ key: 'lucy' }"
+                  >
+                    <a-select-option value="jack">
+                      Jack (100)
+                    </a-select-option>
+                    <a-select-option value="lucy">
+                      Lucy (101)
+                    </a-select-option>
+                  </a-select>
+                </a-form-model-item>
+                <a-form-model-item label="作者">
+                  <a-select
+                    label-in-value
+                    :default-value="{ key: 'lucy' }"
+                  >
+                    <a-select-option value="jack">
+                      Jack (100)
+                    </a-select-option>
+                    <a-select-option value="lucy">
+                      Lucy (101)
+                    </a-select-option>
+                  </a-select>
+                </a-form-model-item>
+                <a-form-model-item label="日期">
+                  <a-select
+                    label-in-value
+                    :default-value="{ key: 'lucy' }"
+                  >
+                    <a-select-option value="jack">
+                      Jack (100)
+                    </a-select-option>
+                    <a-select-option value="lucy">
+                      Lucy (101)
+                    </a-select-option>
+                  </a-select>
+                </a-form-model-item>
+                <a-form-model-item label="置顶">
+                  <a-select
+                    label-in-value
+                    :default-value="{ key: 'lucy' }"
+                  >
+                    <a-select-option value="jack">
+                      Jack (100)
+                    </a-select-option>
+                    <a-select-option value="lucy">
+                      Lucy (101)
+                    </a-select-option>
+                  </a-select>
+                </a-form-model-item>
+                <a-form-model-item label="禁止评论">
+                  <a-select
+                    label-in-value
+                    :default-value="{ key: 'lucy' }"
+                  >
+                    <a-select-option value="jack">
+                      Jack (100)
+                    </a-select-option>
+                    <a-select-option value="lucy">
+                      Lucy (101)
+                    </a-select-option>
+                  </a-select>
+                </a-form-model-item>
         </a-form-model>
       </a-col>
-    </a-row>
-    
+    </a-row> 
 
   </div>
 </template>
@@ -135,7 +134,7 @@
       return {
         value: "",
         labelCol: { span: 2 },
-        wrapperCol: { span: 20 },
+        wrapperCol: { span: 21 },
         form: {
         title: '',
         thumbnail: '',
