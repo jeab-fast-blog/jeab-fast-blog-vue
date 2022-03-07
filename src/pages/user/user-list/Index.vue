@@ -2,7 +2,7 @@
   <div class="new-page" :style="`min-height: ${pageMinHeight}px`">
     <a-row>
       <a-col :span="24">
-        <a-button type="primary" style="margin:0 10px 10px 0">
+        <a-button type="primary" style="margin:0 10px 10px 0" @click="onChange">
           <a-icon type="user-add" />
                 新建用户
         </a-button>  
@@ -128,6 +128,11 @@ const data = [
       ...mapState('setting', ['pageMinHeight']),
 
 
+    },
+    methods: {
+      onChange() {
+        this.$router.push({path: '/user_add'})
+      }
     }
   }
 </script>

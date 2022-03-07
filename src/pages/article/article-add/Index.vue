@@ -106,17 +106,7 @@
                   </a-select>
                 </a-form-model-item>
                 <a-form-model-item label="禁止评论">
-                  <a-select
-                    label-in-value
-                    :default-value="{ key: 'lucy' }"
-                  >
-                    <a-select-option value="jack">
-                      Jack (100)
-                    </a-select-option>
-                    <a-select-option value="lucy">
-                      Lucy (101)
-                    </a-select-option>
-                  </a-select>
+                  <a-switch v-decorator="['switch', { valuePropName: 'checked' }]" />
                 </a-form-model-item>
         </a-form-model>
       </a-col>

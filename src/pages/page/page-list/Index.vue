@@ -5,7 +5,7 @@
         <a-button type="primary" style="margin:0 10px 10px 0">
                 导航管理
         </a-button>    
-        <a-button type="primary">
+        <a-button type="primary" @click="onChange">
           <a-icon type="diff" />
                 新建页面
         </a-button>    
@@ -101,6 +101,11 @@ const data = [
       ...mapState('setting', ['pageMinHeight']),
 
 
+    },
+    methods: {
+      onChange() {
+        this.$router.push({path:'/page_add'})
+      }
     }
   }
 </script>

@@ -19,6 +19,7 @@ const options = {
       name: '403',
       component: () => import('@/pages/exception/403'),
     },
+
     {
       path: '/',
       name: '首页',
@@ -31,7 +32,7 @@ const options = {
           meta: {
             icon: 'edit'
           },
-          component: () => import('@/pages/article-add')
+          component: () => import('@/pages/article/article-add')
         },
         {
           path: 'article_list',
@@ -39,7 +40,7 @@ const options = {
           meta: {
             icon: 'unordered-list'
           },
-          component: () => import('@/pages/article-list')
+          component: () => import('@/pages/article/article-list')
         },
         {
           path: 'page_list',
@@ -47,7 +48,15 @@ const options = {
           meta: {
             icon: 'block'
           },
-          component: () => import('@/pages/page-list')
+          component: () => import('@/pages/page/page-list')
+        },
+        {
+          path: 'page_add',
+          name: '新建页面',
+          meta: {
+            invisible: true
+          },
+          component: () => import('@/pages/page/page-add')
         },
         {
           path: 'category_list',
@@ -55,7 +64,15 @@ const options = {
           meta: {
             icon: 'align-left'
           },
-          component: () => import('@/pages/category-list')
+          component: () => import('@/pages/category/category-list')
+        },
+        {
+          path: 'category_add',
+          name: '新建分类',
+          meta: {
+            invisible: true
+          },
+          component: () => import('@/pages/category/category-add')
         },
         {
           path: 'tag_list',
@@ -63,7 +80,15 @@ const options = {
           meta: {
             icon: 'tags'
           },
-          component: () => import('@/pages/tag-list')
+          component: () => import('@/pages/tag/tag-list')
+        },
+        {
+          path: 'tag_add',
+          name: '新建标签',
+          meta: {
+            invisible: true
+          },
+          component: () => import('@/pages/tag/tag-add')
         },
         {
           path: 'comment_list',
@@ -87,7 +112,15 @@ const options = {
           meta: {
             icon: 'team'
           },
-          component: () => import('@/pages/user-list')
+          component: () => import('@/pages/user/user-list')
+        },
+        {
+          path: 'user_add',
+          name: '新建用户',
+          meta: {
+            invisible: true
+          },
+          component: () => import('@/pages/user/user-add')
         },
         {
           path: 'setting',

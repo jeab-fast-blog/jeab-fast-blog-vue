@@ -2,23 +2,15 @@
   <div class="new-page" :style="`min-height: ${pageMinHeight}px`">
     <a-row>
       <a-col :span="24">
-        <a-button type="primary" style="margin:0 10px 10px 0">
-          <a-icon type="tag" />
-                新建标签
+        <a-button type="primary" style="margin:0 10px 10px 0" >
+                导航管理
+        </a-button>    
+        <a-button type="primary" @click="onChange">
+          <a-icon type="folder-add" />
+                新建分类
         </a-button>    
       </a-col>
     </a-row>  
-    <a-form layout="inline" :form="form">
-      <a-form-item label="搜索">
-        <a-input />
-      </a-form-item>
-    
-      <a-form-item >
-        <a-button type="primary">
-                提交
-        </a-button>    
-      </a-form-item>
-    </a-form>
     <a-table :columns="columns" :data-source="data">
       <span slot="action" >
         <a href="">
@@ -42,7 +34,12 @@ const columns = [
     dataIndex: 'id',
     key: 'id',
   },
-   {
+  {
+    title: '排序',
+    dataIndex: 'sort',
+    key: 'sort',
+  },
+  {
     title: '名称',
     dataIndex: 'name',
     key: 'name',
@@ -68,19 +65,21 @@ const columns = [
 const data = [
   {
     id: '1',
-    name: 'John Brown',
-    alias: 32,
-    articleNum: 'New York No. 1 Lake Park',
+    sort: 'John Brown',
+    name: 32,
+    alias: 'New York No. 1 Lake Park',
+    articleNum: '1',
   },
   {
     id: '1',
-    name: 'John Brown',
-    alias: 32,
-    articleNum: 'New York No. 1 Lake Park',
+    sort: 'John Brown',
+    name: 32,
+    alias: 'New York No. 1 Lake Park',
+    articleNum: '1',
   },
 ];
   export default {
-    name: 'TagList',
+    name: 'CategoryList',
     data() {
       return {
         data,
@@ -94,6 +93,11 @@ const data = [
       ...mapState('setting', ['pageMinHeight']),
 
 
+    },
+    methods: {
+      onChange() {
+        this.$router.push({path:'/category_add'})
+      }
     }
   }
 </script>
