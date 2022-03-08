@@ -4,11 +4,7 @@
       <a-col :span="24">
         <a-button type="primary" style="margin:0 10px 10px 0">
                 静态化管理中心
-        </a-button>    
-        <a-button type="primary">
-          <a-icon type="diff" />
-                新建页面
-        </a-button>    
+        </a-button>     
       </a-col>
     </a-row> 
     <a-tabs default-active-key="basic" >
